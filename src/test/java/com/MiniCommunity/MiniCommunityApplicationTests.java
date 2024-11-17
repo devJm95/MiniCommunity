@@ -1,4 +1,4 @@
-package com.MiniCommunity.demo;
+package com.MiniCommunity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
