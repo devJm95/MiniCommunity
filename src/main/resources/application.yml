@@ -9,4 +9,6 @@ spring:
     hibernate:
       format_sql: true
       ddl-auto: update
+      properties:
+        hibernate.default_schema: community
     database-platform: org.hibernate.dialect.MariaDBDialect
