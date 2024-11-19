@@ -1,6 +1,6 @@
 package com.MiniCommunity.entity.user;
 
-import com.MiniCommunity.entity.post.Like;
+import com.MiniCommunity.entity.post.Likes;
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -19,6 +19,6 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Like> likes;
+    private Set<Likes> likes;
 
 }

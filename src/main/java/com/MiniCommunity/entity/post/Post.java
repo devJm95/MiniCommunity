@@ -16,6 +16,6 @@ public class Post {
     private String content;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Like> likes = new HashSet<>();
+    private Set<Likes> likes = new HashSet<>();
 
 }
