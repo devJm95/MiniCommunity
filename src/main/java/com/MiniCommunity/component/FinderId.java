@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class FinderId {
-    private final PostRepository postRepository;
-    private final UserRepository userRepository;
+//    private final PostRepository postRepository;
+//    private final UserRepository userRepository;
 
 //    public Post findPostById(Long postId) {
 //        return postRepository.findById(postId)
