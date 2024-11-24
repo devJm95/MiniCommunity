@@ -20,7 +20,7 @@ public class PostController {
 
     @PostMapping
 
-    public ResponseEntity<Post> saveOrUpdatePost(@RequestBody PostDTO postDTO, @RequestParam Long userId{
+    public ResponseEntity<Post> saveOrUpdatePost(@RequestBody PostDTO postDTO, @RequestParam Long userId) {
         Post post = postService.saveOrUpdatePost(postDTO, userId);
         return ResponseEntity.ok(post);
     }
