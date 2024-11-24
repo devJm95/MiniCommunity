@@ -1,6 +1,9 @@
 package com.MiniCommunity.controller.post;
 
-import com.MiniCommunity.service.LikeService;
+import com.MiniCommunity.dto.post.PostDTO;
+import com.MiniCommunity.entity.post.Post;
+import com.MiniCommunity.service.post.LikeService;
+import com.MiniCommunity.service.post.PostService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +14,17 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "PostApi")
 @RequestMapping("/api/posts")
 public class PostController {
+
     private final LikeService likeService;
+    private final PostService postService;
+
+    @PostMapping
+
+    public ResponseEntity<Post> saveOrUpdatePost(@RequestBody PostDTO postDTO, @RequestParam Long userId{
+        Post post = postService.saveOrUpdatePost(postDTO, userId);
+        return ResponseEntity.ok(post);
+    }
+
 
     @PostMapping("/{postId}/like")
     public ResponseEntity<?> likePost(@PathVariable Long postId, @RequestParam Long userId){

@@ -1,4 +1,4 @@
-package com.MiniCommunity.service;
+package com.MiniCommunity.service.post;
 
 import com.MiniCommunity.component.FinderId;
 import com.MiniCommunity.entity.post.Likes;
