@@ -1,9 +1,5 @@
-package com.MiniCommunity.component;
+package com.MiniCommunity.common.component;
 
-import com.MiniCommunity.entity.post.Post;
-import com.MiniCommunity.entity.user.User;
-import com.MiniCommunity.repository.post.PostRepository;
-import com.MiniCommunity.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;

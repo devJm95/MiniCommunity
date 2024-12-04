@@ -1,11 +1,17 @@
-package com.MiniCommunity.entity.user;
+package com.MiniCommunity.domain.entity.user;
 
-import com.MiniCommunity.entity.post.Likes;
+import com.MiniCommunity.domain.entity.post.Likes;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Set;
 
 @Entity
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
@@ -17,6 +23,9 @@ public class User {
 
     @Column(nullable = false)
     private String password;
+
+    @Column
+    private String email;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Likes> likes;

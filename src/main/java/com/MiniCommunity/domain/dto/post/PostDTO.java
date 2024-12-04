@@ -1,4 +1,4 @@
-package com.MiniCommunity.dto.post;
+package com.MiniCommunity.domain.dto.post;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
