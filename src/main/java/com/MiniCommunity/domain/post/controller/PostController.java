@@ -1,9 +1,9 @@
-package com.MiniCommunity.controller.post;
+package com.MiniCommunity.domain.post.controller;
 
-import com.MiniCommunity.dto.post.PostDTO;
-import com.MiniCommunity.entity.post.Post;
-import com.MiniCommunity.service.post.LikeService;
-import com.MiniCommunity.service.post.PostService;
+import com.MiniCommunity.domain.post.dro.PostDTO;
+import com.MiniCommunity.domain.post.entity.Post;
+import com.MiniCommunity.domain.like.service.LikeService;
+import com.MiniCommunity.domain.post.service.PostService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

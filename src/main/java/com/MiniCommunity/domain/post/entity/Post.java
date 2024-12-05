@@ -1,7 +1,8 @@
-package com.MiniCommunity.domain.entity.post;
+package com.MiniCommunity.domain.post.entity;
 
-import com.MiniCommunity.domain.entity.user.User;
-import com.MiniCommunity.domain.dto.post.PostDTO;
+import com.MiniCommunity.domain.user.entity.User;
+import com.MiniCommunity.domain.post.dro.PostDTO;
+import com.MiniCommunity.domain.like.entity.Likes;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,8 +1,8 @@
-package com.MiniCommunity.domain.repository.post;
+package com.MiniCommunity.domain.like.repository;
 
-import com.MiniCommunity.domain.entity.post.Likes;
-import com.MiniCommunity.domain.entity.post.Post;
-import com.MiniCommunity.domain.entity.user.User;
+import com.MiniCommunity.domain.like.entity.Likes;
+import com.MiniCommunity.domain.post.entity.Post;
+import com.MiniCommunity.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

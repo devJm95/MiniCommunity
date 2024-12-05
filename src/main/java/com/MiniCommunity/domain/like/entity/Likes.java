@@ -1,6 +1,7 @@
-package com.MiniCommunity.domain.entity.post;
+package com.MiniCommunity.domain.like.entity;
 
-import com.MiniCommunity.domain.entity.user.User;
+import com.MiniCommunity.domain.post.entity.Post;
+import com.MiniCommunity.domain.user.entity.User;
 import jakarta.persistence.*;
 import lombok.Data;
 

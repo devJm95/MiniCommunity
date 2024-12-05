@@ -1,12 +1,12 @@
-package com.MiniCommunity.service.post;
+package com.MiniCommunity.domain.post.service;
 
 
-import com.MiniCommunity.component.FinderId;
-import com.MiniCommunity.dto.post.PostDTO;
-import com.MiniCommunity.entity.post.Post;
-import com.MiniCommunity.entity.user.User;
-import com.MiniCommunity.repository.post.PostRepository;
-import com.MiniCommunity.repository.user.UserRepository;
+import com.MiniCommunity.common.component.FinderId;
+import com.MiniCommunity.domain.post.dro.PostDTO;
+import com.MiniCommunity.domain.post.entity.Post;
+import com.MiniCommunity.domain.user.entity.User;
+import com.MiniCommunity.domain.post.repository.PostRepository;
+import com.MiniCommunity.domain.user.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
