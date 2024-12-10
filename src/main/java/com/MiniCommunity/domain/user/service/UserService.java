@@ -6,10 +6,9 @@ import com.MiniCommunity.domain.user.dto.UserResponseDTO;
 import com.MiniCommunity.domain.user.dto.UserUpdateDTO;
 import com.MiniCommunity.domain.user.entity.User;
 import com.MiniCommunity.domain.user.repository.UserRepository;
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
+import org.springframework.transaction.annotation.Transactional;
 import java.util.regex.Pattern;
 
 @Service
@@ -61,6 +60,12 @@ public class UserService {
         }
         //.... 필요한 로직은 나중에 추가
         userRepository.save(user);
+        return UserResponseDTO.fromEntity(user);
+    }
+
+    @Transactional(readOnly = true)
+    public UserResponseDTO getUserById(Long userId){
+        User user = finderId.findById(userRepository, userId, "User");
         return UserResponseDTO.fromEntity(user);
     }
 

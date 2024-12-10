@@ -22,9 +22,17 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<UserResponseDTO> getUser(@PathVariable Long id){
+        UserResponseDTO response = userService.getUserById(id);
+        return ResponseEntity.ok(response);
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<UserResponseDTO> updateUser(@PathVariable Long id, @RequestBody UserUpdateDTO userUpdateDTO){
         UserResponseDTO response = userService.updateUser(id, userUpdateDTO);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
+
+
 }
